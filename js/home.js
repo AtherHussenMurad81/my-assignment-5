@@ -33,23 +33,35 @@ function getElement(id) {
 //             `;
 //   cardContainer.append(newCard);
 // });
-const now = new Date();
+const now = new Date().toLocaleTimeString();
+// const now = new Date();
 
-const localTimeString = now.toLocaleTimeString();
+// Use padStart to add a leading zero to single-digit numbers
 
-console.log(localTimeString);
+// console.log(localTimeString);
 getElement("card-box").addEventListener("click", function (e) {
   if (e.target.className.includes("call-btn")) {
     const cartButton = e.target;
     // alert("call btn");
+
+    const countCoin = Number(getElement("count-coin").innerText);
+    // console.log(countCoin);
+
+    const totalCoin = countCoin - 20;
+
+    if (totalCoin < 0) {
+      alert("You don't have enough coins. You need 20 coins to call");
+      return;
+    }
+    getElement("count-coin").innerText = totalCoin;
     const cardTitle =
       cartButton.parentNode.parentNode.children[1].children[0].innerText;
 
     const callNumber =
       cartButton.parentNode.parentNode.children[1].children[2].innerText;
-    console.log(cardTitle, callNumber);
+    // console.log(cardTitle, callNumber);
     const cardContainer = getElement("card-container");
-
+    alert("📞 Calling " + cardTitle + " " + callNumber + "...");
     const newCard = document.createElement("div");
     newCard.innerHTML = `
             <div
@@ -62,7 +74,7 @@ getElement("card-box").addEventListener("click", function (e) {
                 <p class="text-[#5c5c5c]">${callNumber}</p>
               </div>
               <div>
-                <time datetime="">${localTimeString}</time>
+                <time datetime="">${now}</time>
               </div>
             </div>
             `;
@@ -90,6 +102,29 @@ getElement("clear-btn").addEventListener("click", function () {
   const cartContainer = getElement("card-container");
   cartContainer.innerHTML = "";
 });
+
+// copy techique
+
+getElement();
+
+// document.addEventListener('DOMContentLoaded', function() {
+//   const copyButton = document.getElementById('copy-button');
+//   const textToCopy = document.getElementById('text-to-copy').textContent;
+
+//   copyButton.addEventListener('click', function() {
+//     navigator.clipboard.writeText(textToCopy)
+//       .then(() => {
+//         // Success feedback
+//         console.log('Text successfully copied to clipboard');
+//         alert('Text copied to clipboard!');
+//       })
+//       .catch(err => {
+//         // Error handling
+//         console.error('Failed to copy text: ', err);
+//         alert('Failed to copy text.');
+//       });
+//   });
+// });
 
 // //delegation
 
