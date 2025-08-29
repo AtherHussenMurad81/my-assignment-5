@@ -1,8 +1,9 @@
 ### Answer the following questions clearly:
 
-1. What is the difference between **getElementById,
+1. What is the difference between \*\*getElementById,
    Ans:
-   getElementsByClassName, and querySelector / querySelectorAll**?
+
+   getElementsByClassName, and querySelector / querySelectorAll\*\*?
    Ans: There are many difference between getElementById, getElementByClassName and querySelector / querySelectorAll. Among them, getElementById is the simplest element. It returns a single element. On the other hand, getElementById, getElementByClassName and querySelector / querySelectorAll are more flexible using this selectors to find current elements
 
    1. getElementById:
@@ -27,10 +28,14 @@
       Usage: Selecting multiple elements with complex CSS selectors.
 
 2. How do you **create and insert a new element into the DOM**?
-   Ans: To create and insert a new element into the dom using JavaScript. We can follow these steps:
+
+   Ans:
+
+   To create and insert a new element into the dom using JavaScript. We can follow these steps:
    Step 1. Create the element:- To create a new HTML element. We can use the document.createElement()
    Step 2. Set Attributes:- Customize the element by adding attributes, Id's, inner content or classes.
    Step 3. Insert into the dom:- Use methods like appendChlid() or append() to add the element to the desired location in the dom.
+
 3. What is **Event Bubbling** and how does it work?
    Ans:
    Event Bubbling is a term in the DOM where the event an element receives is bubbled to its parent, upward in the dom tree, until it gets to the root.
@@ -56,6 +61,7 @@
    - CSS Structure: Visual borders and sizes make the DOM hierarchy and event propagation clear.
 
 4. What is **Event Delegation** in JavaScript? Why is it useful?
+
    Ans:
 
    Event Delegation is a pattern based upon the concept of Event Bubbling. It is and event-handling pattern that allows you handle event at a higher level in the DOM tree other the level where the event was first received.
@@ -69,7 +75,9 @@
    3. Handles Dynamic Content: It's particularly useful for elements that are added to the DOM after the page has loaded. Since the listener is on the parent, it automatically works for new child elements without needing to add a new listener every time you create a new element.
 
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
+
    Ans:
+
    The preventDefault() and stopPropagation() methods in JS are used to control event behavior but they serve different purposes. preventDefault() stops the default browser action for an event, while stopPropagation prevents the event from the bubbling up the dom tree.
 
 there are many difference of preventDefault() and stopPropagation() methods;
