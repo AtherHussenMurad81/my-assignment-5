@@ -1,10 +1,9 @@
 ### Answer the following questions clearly:
 
-1. What is the difference between \*\*getElementById,
-   Ans:
+1. What is the difference between \*\*getElementById, getElementsByClassName, and querySelector / querySelectorAll\*\*?
 
-   getElementsByClassName, and querySelector / querySelectorAll\*\*?
-   Ans: There are many difference between getElementById, getElementByClassName and querySelector / querySelectorAll. Among them, getElementById is the simplest element. It returns a single element. On the other hand, getElementById, getElementByClassName and querySelector / querySelectorAll are more flexible using this selectors to find current elements
+   Ans:
+   There are many difference between getElementById, getElementByClassName and querySelector / querySelectorAll. Among them, getElementById is the simplest element. It returns a single element. On the other hand, getElementById, getElementByClassName and querySelector / querySelectorAll are more flexible using this selectors to find current elements
 
    1. getElementById:
       Purpose: getElementById selects a single elements by using unique id.
@@ -80,20 +79,20 @@
 
    The preventDefault() and stopPropagation() methods in JS are used to control event behavior but they serve different purposes. preventDefault() stops the default browser action for an event, while stopPropagation prevents the event from the bubbling up the dom tree.
 
-there are many difference of preventDefault() and stopPropagation() methods;
+   there are many difference of preventDefault() and stopPropagation() methods;
 
-    1.preventDefault()
+   1. preventDefault()
 
-    Purpose: Prevents the default browser action
+   Purpose: Prevents the default browser action
 
-    Action: Stops form link navigation etc.
+   Action: Stops form link navigation etc.
 
-    Propagation: Does not effect event propagation.
+   Propagation: Does not effect event propagation.
 
-    2. stopPropagation()
+   2. stopPropagation()
 
-    Purpose: Stops event from bubbling up the DOM
+   Purpose: Stops event from bubbling up the DOM
 
-    Action: Stops the event from reaching parent elements.
+   Action: Stops the event from reaching parent elements.
 
-    Propagation: Stops event propagation.
+   Propagation: Stops event propagation.
