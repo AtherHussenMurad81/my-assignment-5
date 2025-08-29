@@ -82,17 +82,18 @@
 
 there are many difference of preventDefault() and stopPropagation() methods;
 
-1.preventDefault()
-Purpose: Prevents the default browser action
+    1.preventDefault()
 
-Action: Stops form link navigation etc.
+    Purpose: Prevents the default browser action
 
-Propagation: Does not effect event propagation.
+    Action: Stops form link navigation etc.
 
-2. stopPropagation()
+    Propagation: Does not effect event propagation.
 
-Purpose: Stops event from bubbling up the DOM
+    2. stopPropagation()
 
-Action: Stops the event from reaching parent elements.
+    Purpose: Stops event from bubbling up the DOM
 
-Propagation: Stops event propagation.
+    Action: Stops the event from reaching parent elements.
+
+    Propagation: Stops event propagation.
