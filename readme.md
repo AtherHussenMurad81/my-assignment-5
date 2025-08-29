@@ -31,11 +31,14 @@
    Ans:
 
    To create and insert a new element into the dom using JavaScript. We can follow these steps:
-   Step 1. Create the element:- To create a new HTML element. We can use the document.createElement()
+   
+   Step 1. Create the element:- To create a new HTML element. We can use the document.createElement().
+   
    Step 2. Set Attributes:- Customize the element by adding attributes, Id's, inner content or classes.
+   
    Step 3. Insert into the dom:- Use methods like appendChlid() or append() to add the element to the desired location in the dom.
 
-3. What is **Event Bubbling** and how does it work?
+4. What is **Event Bubbling** and how does it work?
    Ans:
    Event Bubbling is a term in the DOM where the event an element receives is bubbled to its parent, upward in the dom tree, until it gets to the root.
 
@@ -59,7 +62,7 @@
 
    - CSS Structure: Visual borders and sizes make the DOM hierarchy and event propagation clear.
 
-4. What is **Event Delegation** in JavaScript? Why is it useful?
+5. What is **Event Delegation** in JavaScript? Why is it useful?
 
    Ans:
 
@@ -73,7 +76,7 @@
 
    3. Handles Dynamic Content: It's particularly useful for elements that are added to the DOM after the page has loaded. Since the listener is on the parent, it automatically works for new child elements without needing to add a new listener every time you create a new element.
 
-5. What is the difference between **preventDefault() and stopPropagation()** methods?
+6. What is the difference between **preventDefault() and stopPropagation()** methods?
 
    Ans:
 
